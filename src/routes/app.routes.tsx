@@ -7,6 +7,7 @@ import Account from '../pages/Account';
 import NewAccount from '../pages/NewAccount';
 
 const App = createStackNavigator();
+const Root = createStackNavigator();
 
 const AppRouter: React.FC = () => (
   <App.Navigator
@@ -24,12 +25,25 @@ const AppRouter: React.FC = () => (
       options={{ headerShown: false }}
     />
     <App.Screen name="Account" component={Account} />
-    <App.Screen
-      name="NewAccount"
-      component={NewAccount}
-      options={{ headerShown: false }}
-    />
   </App.Navigator>
 );
 
-export default AppRouter;
+const RootRouter: React.FC = () => (
+  <Root.Navigator mode="modal">
+    <Root.Screen
+      name="MainStack"
+      component={AppRouter}
+      options={{ headerShown: false }}
+    />
+    <Root.Screen
+      options={{
+        cardStyle: { backgroundColor: '#ffffff' },
+        headerShown: false,
+      }}
+      name="NewAccount"
+      component={NewAccount}
+    />
+  </Root.Navigator>
+);
+
+export default RootRouter;
