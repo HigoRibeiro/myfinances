@@ -35,7 +35,7 @@ const AccountPage: React.FC = () => {
 
   const handleCreateNewAccount = useCallback(() => {
     navigation.navigate('NewAccount');
-  });
+  }, []);
 
   useLayoutEffect(() => {
     navigation.setOptions({
