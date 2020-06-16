@@ -14,6 +14,7 @@ import { Form } from '@unform/mobile';
 import { FormHandles } from '@unform/core';
 
 import Input from '../../components/Input';
+import MaskInput from '../../components/MaskInput';
 
 import {
   Container,
@@ -21,7 +22,7 @@ import {
   // InputContainer,
   // Label,
   // Input,
-  MaskInput,
+  // MaskInput,
   CreateAccountButton,
   CreateAccountButtonText,
 } from './styles';
@@ -87,9 +88,14 @@ const NewAccount: React.FC = () => {
           keyboardShouldPersistTaps="handled"
         >
           <Container>
-            <Form ref={formRef} onSubmit={handleSignIn}>
+            <Form
+              ref={formRef}
+              onSubmit={handleSignIn}
+              initialData={{ name: 'Higo', value: 2212.11 }}
+            >
               <Input label="Nome da nova conta" name="name" />
-              <Input
+              <MaskInput
+                type={'money'}
                 label="Valor inicial"
                 name="value"
                 keyboardType="numeric"
