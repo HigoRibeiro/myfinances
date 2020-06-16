@@ -83,7 +83,7 @@ const Dashboard: React.FC = () => {
     <Container>
       <Header>
         <HeaderTitle>MyFin.</HeaderTitle>
-        <Icon name="setting" size={24} />
+        <Icon name="setting" size={24} color="rgba(255, 255, 255, 0.9)" />
       </Header>
       <Content>
         <Title>My Dashboard</Title>

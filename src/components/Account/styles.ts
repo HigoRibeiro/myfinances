@@ -18,11 +18,11 @@ export const AccountTitleText = styled.Text`
   font-size: 20px;
   margin-bottom: 8px;
   letter-spacing: 2px;
-  color: #22272b;
+  color: rgba(255, 255, 255, 0.9);
 `;
 
 export const AccountTypeText = styled.Text`
   font-size: 16px;
-  color: #a2a2a2;
+  color: rgba(255, 255, 255, 0.6);
   letter-spacing: 2px;
 `;

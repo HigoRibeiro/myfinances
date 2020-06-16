@@ -75,7 +75,7 @@ const NewAccount: React.FC = () => {
             navigation.goBack();
           }}
         >
-          <Icon name="close" size={24} color="#22272b" />
+          <Icon name="close" size={26} color="rgba(255, 255, 255, 0.9);" />
         </TouchableWithoutFeedback>
       </Header>
       <KeyboardAvoidingView

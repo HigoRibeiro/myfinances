@@ -49,7 +49,7 @@ export const MaskInput = styled(IMaskTextInput)`
 
 export const CreateAccountButton = styled.TouchableHighlight<CABProps>`
   border-top-width: 1px;
-  border-top-color: #2a2a2a;
+  border-top-color: rgba(255, 255, 255, 0.07);
   align-items: center;
   justify-content: center;
   padding: 16px 0
@@ -60,5 +60,5 @@ export const CreateAccountButtonText = styled.Text`
   text-transform: uppercase;
   font-size: 16px;
   font-weight: bold;
-  color: #2a2a2a;
+  color: rgba(255, 255, 255, 0.9);
 `;

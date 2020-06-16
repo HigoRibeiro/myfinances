@@ -12,10 +12,10 @@ const Root = createStackNavigator();
 const AppRouter: React.FC = () => (
   <App.Navigator
     screenOptions={{
-      cardStyle: { backgroundColor: '#fff' },
-      // headerStyle: { backgroundColor: '#22272b' },
-      // headerBackTitleStyle: { color: '#FFF' },
-      // headerTitleStyle: { color: '#FFF' },
+      cardStyle: { backgroundColor: 'rgb(47, 52, 55)' },
+      headerStyle: { backgroundColor: 'rgb(47, 52, 55)' },
+      headerBackTitleStyle: { color: 'rgba(255, 255, 255, 0.9)' },
+      headerTitleStyle: { color: 'rgba(255, 255, 255, 0.9)' },
     }}
     initialRouteName="Account"
   >
@@ -37,7 +37,7 @@ const RootRouter: React.FC = () => (
     />
     <Root.Screen
       options={{
-        cardStyle: { backgroundColor: '#ffffff' },
+        cardStyle: { backgroundColor: 'rgb(47, 52, 55)' },
         headerShown: false,
       }}
       name="NewAccount"

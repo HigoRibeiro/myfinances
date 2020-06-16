@@ -41,7 +41,7 @@ const AccountPage: React.FC = () => {
     navigation.setOptions({
       headerRight: () => (
         <RightMenu onPress={handlePressEditMode}>
-          <FeatherIcon name="edit" size={22} />
+          <FeatherIcon name="edit" size={22} color="rgba(255, 255, 255, 0.9)" />
         </RightMenu>
       ),
     });
@@ -67,7 +67,13 @@ const AccountPage: React.FC = () => {
             <Account title={title} cash={cash} type={type} />
             {!editMode && (
               <CheckIcon>
-                {current && <Icon name="check" size={26} />}
+                {current && (
+                  <Icon
+                    name="check"
+                    size={26}
+                    color="rgba(255, 255, 255, 0.9)"
+                  />
+                )}
               </CheckIcon>
             )}
           </SelectBox>

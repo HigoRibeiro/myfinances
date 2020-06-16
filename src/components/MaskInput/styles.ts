@@ -13,14 +13,14 @@ export const Container = styled.View`
 
 export const Label = styled.Text`
   font-size: 22px;
-  color: #2a2a2a;
+  color: rgba(255, 255, 255, 0.6);
   font-weight: 500;
 `;
 
 export const TextInput = styled(TextInputMask)`
   font-size: 24px;
   font-weight: 400;
-  color: #626262;
+  color: rgba(255, 255, 255, 0.9);
   padding-top: 15px;
   padding-bottom: 15px;
 `;

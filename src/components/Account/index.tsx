@@ -21,7 +21,7 @@ const Account: React.FC<AccountProps> = ({ title, cash, type }) => {
   return (
     <Container>
       <AccountIcon>
-        <Icon name={type} size={40} />
+        <Icon name={type} size={40} color="rgba(255, 255, 255, 0.5)" />
       </AccountIcon>
       <AccountContent>
         <AccountTitleText>{title}</AccountTitleText>

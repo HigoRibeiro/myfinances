@@ -4,7 +4,7 @@ import { FlatList } from 'react-native';
 
 export const Container = styled.View`
   flex: 1;
-  background: #fff;
+  background: rgb(47, 52, 55);
 `;
 
 export const Header = styled.View`
@@ -12,13 +12,14 @@ export const Header = styled.View`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding-top: ${isIphoneX ? 50 : 0}px;
+  padding-top: ${isIphoneX() ? 50 : 0}px;
   padding-right: 25px;
   padding-left: 25px;
   margin-bottom: 45px;
 `;
 
 export const HeaderTitle = styled.Text`
+  color: rgba(255, 255, 255, 0.9);
   font-size: 24px;
   font-weight: bold;
 `;
@@ -29,6 +30,7 @@ export const Content = styled.View`
 `;
 
 export const Title = styled.Text`
+  color: rgba(255, 255, 255, 0.6);
   font-size: 36px;
   font-weight: bold;
   margin-bottom: 35px;

@@ -17,11 +17,11 @@ export const RightMenu = styled.TouchableOpacity`
 `;
 
 export const CreateNewAccount = styled.TouchableOpacity`
-  margin: 10px 15px;
+  margin: 30px 15px;
   border-radius: 4px;
-  border-width: 3px;
-  border-color: #efefef;
-  border-style: dashed;
+  border-width: 1px;
+  border-color: rgba(255, 255, 255, 0.07);
+  border-style: solid;
   justify-content: center;
   align-items: center;
   padding: 10px;
@@ -30,7 +30,7 @@ export const CreateNewAccount = styled.TouchableOpacity`
 
 export const CreateNewAccountText = styled.Text`
   margin-left: 8px;
-  color: #a2a2a2;
+  color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 2px;

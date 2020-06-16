@@ -79,6 +79,7 @@ const Input: React.RefForwardingComponent<{}, InputProps> = (
         ref={inputElementRef}
         value={inputValue}
         onChangeText={setInputValue}
+        keyboardAppearance="dark"
         {...rest}
       />
     </Container>
